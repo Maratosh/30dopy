@@ -66,3 +66,18 @@ while i < j:
     j -= 1
 print(is_palinom)
 print('cicle  ---- %s sec ----' %(time.time() - start))
+
+#Strings EBAT 
+st = 'aaaabbcaa.' # add '.'
+
+s = 1
+leng = len(st)
+# for a
+for i in range(leng-1):
+    if st[i+1] == st[i]:
+        s += 1
+    else:
+        print(st[i]+str(s), end='')
+        s = 1
+
+
