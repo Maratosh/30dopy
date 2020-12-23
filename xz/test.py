@@ -27,3 +27,23 @@ while d % a != 0 or d % b != 0:
 print(d)
 #***************************************
 
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+for j in range(c, d+1):
+    print(' ', '\t', j, end=' ')
+print()
+for i in range(a, b+1):
+    print(i, end=' ')
+    for j in range(c, d+1):
+        print(' ', '\t', i * j, end=' ')
+    print()
+    
+ a, b, c, d = (int(input()) for x in range(4))
+print('', *range(c,d+1), sep='\t')
+for x in range(a, b+1):
+    print(x, *[y*x for y in range(c, d+1)], sep='\t')   
+    
+#******************************************************************
+
