@@ -46,4 +46,23 @@ for x in range(a, b+1):
     print(x, *[y*x for y in range(c, d+1)], sep='\t')   
     
 #******************************************************************
-
+import time
+import random
+import string
+s = ''.join(random.choices(string.ascii_uppercase, k=1000))
+#slices
+start = time.time()
+print(s == s[::-1])
+print('slices ---- %s sec ----' %(time.time() - start))
+#cicle
+start = time.time()
+is_palinom = True
+i = 0
+j = len(s) - 1
+while i < j:
+    if s[i] != s[j]:
+        is_palinom = False
+    i += 1
+    j -= 1
+print(is_palinom)
+print('cicle  ---- %s sec ----' %(time.time() - start))
