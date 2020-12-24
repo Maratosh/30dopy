@@ -1,3 +1,5 @@
+https://stepic.org/media/attachments/course67/week_2.html  ﻿
+
 n = int(input('enter the number: '))
 #c = 1
 #while c <= n:
