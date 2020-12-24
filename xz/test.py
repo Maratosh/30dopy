@@ -79,5 +79,29 @@ for i in range(leng-1):
     else:
         print(st[i]+str(s), end='')
         s = 1
+#################
+a = [int(i) for i in input().split()]
+s = 0
+for i in a:
+    s += i
+print(s)
 
+#########################
+#a = [int(i) for i in input().split()]
+a = [4, 8, 0, 3, 4, 2, 0, 3]
+b = []
+
+for i in range(len(a)):
+    if len(a) == 1:
+        b = a
+        break
+    elif i == (len(a)-1):
+        b.append(a[0]+ a[i-1])
+    else:
+        b.append(a[i-1] + a[i+1])
+
+for i in b:
+    print(i, end=' '
+#################################
+     
 
