@@ -1,0 +1,31 @@
+>>> def plus(x, y):
+...     return x + y
+... 
+>>> def minus(x, y):
+...     return x - y
+... 
+
+# List of fi=unctions
+>>> adef = [plus, minus]
+>>> adef[0]('Lei', 'san')
+'Leisan'
+
+# Dictionary of functions
+>>> adict = {'+':plus, '-':minus}
+>>> adict['+']('Lei', 'san')
+'Leisan'
+ 
+# Nested functions
+
+>>> def func(x, y):
+...     def plus(x, y):
+...         return x + y
+...     def minus(x, y):
+...         return x - y
+...     if x > y:
+...         return minus(x, y)
+...     else:
+...         return plus(x, y)
+... 
+>>> func('Lei', 'san')
+'Leisan'
