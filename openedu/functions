@@ -39,3 +39,23 @@
 >>> c = (lambda x, y: x+y if x<y  else x-y)
 >>> c('Lei', 'san')
 'Leisan'
+
+
+# ***********************************Home work******************
+
+def main(a, b, name='1'):
+    def perim(a, b):
+        return (a+b)*2
+    def sq(a,b):
+        return a*b
+    if name =='perim':
+        return perim(a,b)
+    elif name == 'sq':
+        return sq(a,b)
+    else:
+        print(sq(a,b), perim(a,b))
+      
+a = int(input())
+b = int(input())
+
+main(a,b)
