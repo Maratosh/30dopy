@@ -59,3 +59,28 @@ a = int(input())
 b = int(input())
 
 main(a,b)
+#***********************************************************
+def func():
+    a = int(input())
+    b = int(input())
+
+    per = lambda a, b: a*b
+    sq  = lambda a, b: (a+b)*2
+    print(per(a,b), sq(a, b))
+    
+func()
+#****************************************************
+
+def func():
+    a = int(input())
+    b = int(input())
+    sq  = lambda a,b: a*b
+    per = lambda a,b: (a+b)*2
+    main = [sq(a, b),per(a, b)]
+    print(0, main[0])
+    print(1, main[1])
+    print(main)
+    for i in main:
+        print(i, end=' ')
+    
+func()
