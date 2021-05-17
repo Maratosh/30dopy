@@ -29,3 +29,13 @@
 ... 
 >>> func('Lei', 'san')
 'Leisan'
+
+# Dictionary lambda
+>>> calc = {'+': lambda x,y: x+y, '-': lambda x,y: x-y}
+>>> calc['+']('Lei', 'san')
+'Leisan'
+
+
+>>> c = (lambda x, y: x+y if x<y  else x-y)
+>>> c('Lei', 'san')
+'Leisan'
